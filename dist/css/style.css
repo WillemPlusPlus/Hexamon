@@ -1,0 +1,154 @@
+
+/* center body content */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#uiWrapper{
+    text-align: left;
+}
+
+#toolBox{
+    background: #333;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 15rem;
+    row-gap: 0.5rem;
+}
+.toolButton{
+
+    font-size: 1rem;
+    color: #fff;
+    outline-width: 3px;
+    outline-color: #fff;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
+    line-height: 3;
+    border: 1px solid white;
+    padding: 0.2rem 1rem;
+    user-select: none;
+}
+.toolButton:hover, .toolButton:focus{
+    color: #ccc;
+    background: #000;
+
+}
+#spriteBox{
+    display:none;
+}
+#infoBox{
+    background: #333;
+    font-size: 1rem;
+    color: #fff;
+    position: fixed;
+    top: 0%;
+    left: 75%;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+
+.spanVal{
+    margin-left: 0.5rem;
+}
+.spanKey{
+    margin-right: 0.5rem;
+}
+.infoHead{
+    border:solid;
+    border-width: 1px;
+    border-color: #fff;
+}
+#pipcanvas{
+    width:120px
+}
+
+#customiseWrapper{
+    padding: 2rem;
+    background: #333;
+    font-size: 1rem;
+    color: #fff;
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 10rem;
+    row-gap: 1rem;
+}
+.challenge{
+    margin: 0rem;
+    padding: 0.5rem 0.2rem
+}
+.challenge:hover, .toolButton:focus{
+    color: #ccc;
+    background: #222;
+    cursor: pointer;
+
+}
+
+#challengeWrapper{
+    background: #333;
+    font-size: 1rem;
+    color: #fff;
+    position: fixed;
+    top: 10%;
+    left: 1%;
+    display: grid;
+    grid-template-columns: 25rem;
+    row-gap: 0.5rem;
+    padding: 1rem 2rem;
+}
+#challengeInfo{
+    background: #333;
+    font-size: 1rem;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    display: grid;
+    grid-template-columns: 25rem;
+    row-gap: 1rem;
+    padding: 1rem 2rem;
+}
+.challengeInfoTitle{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.challengeDialog{
+    text-align: center;
+    background: #333;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
